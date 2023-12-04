@@ -13,13 +13,11 @@ defineProps({
     target="_blank"
     class="group inline-flex space-x-1.5 items-baseline"
   >
-    <span class="underline text-gray-300 group-hover:text-gray-100 transition">
+    <span>
       <slot />
     </span>
     <span>
-      <i
-        class="ri-external-link-line text-gray-400 group-hover:text-gray-300 transition"
-      ></i>
+      <i></i>
     </span>
   </NuxtLink>
 </template>
