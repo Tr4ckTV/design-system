@@ -23,3 +23,9 @@ defineProps({
     </div>
   </NuxtLink>
 </template>
+
+<style scoped>
+.menu-link:hover {
+  color: #67eef9;
+}
+</style>

@@ -8,7 +8,11 @@ const props = defineProps({
 </script>
 
 <template>
-  <NuxtLink :to="to" active-class="text-cyan-300" class="menu-link">
+  <NuxtLink
+    :to="to"
+    active-class="text-red-500"
+    class="menu-link hover:text-red-500"
+  >
     <slot />
     <span
       class="menu absolute bottom-0 left-0 right-0 block w-0 h-1"
@@ -20,10 +24,6 @@ const props = defineProps({
 <style scoped>
 .menu-link {
   position: relative;
-}
-
-.menu-link:hover {
-  color: #67eef9;
 }
 
 .menu-link:after,
@@ -59,6 +59,6 @@ const props = defineProps({
 .menu-link:hover::after {
   width: 10px;
   height: 10px;
-  border-color: #67eef9;
+  border-color: #ef4444;
 }
 </style>
